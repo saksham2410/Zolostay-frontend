@@ -59,7 +59,6 @@ class HotelEnter extends React.Component {
                   placeholder="hotel address"
                 />
               </label>
-              {/* {this.state.errors.username && <p className="text text-danger" >  {this.state.errors.username.message} </p> } */}
             </div>
 
             <div className="form-group">
@@ -74,7 +73,6 @@ class HotelEnter extends React.Component {
                   placeholder="your hotel city"
                 />
               </label>
-              {/* {this.state.errors.email && <p className="text text-danger" >  {this.state.errors.email.message} </p> } */}
             </div>
 
             <div className="form-group">
@@ -89,7 +87,6 @@ class HotelEnter extends React.Component {
                   placeholder="your hotel state"
                 />
               </label>
-              {/* {this.state.errors.password && <p className="text text-danger" >  {this.state.errors.password.message} </p> } */}
             </div>
             <div className="form-group">
               <label>
@@ -103,7 +100,6 @@ class HotelEnter extends React.Component {
                   placeholder="your hotel name"
                 />
               </label>
-              {/* {this.state.errors.password && <p className="text text-danger" >  {this.state.errors.password.message} </p> } */}
             </div>
             <input type="submit" className="btn btn-primary" />
           </form>

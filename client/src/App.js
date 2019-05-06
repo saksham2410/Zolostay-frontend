@@ -41,8 +41,6 @@ class App extends Component {
           <div className="row">
             <div className="col-md-3">
               <Link to="/" className = "nav-item nav-link">Home</Link>
-              <Link to="/about" className = "nav-item nav-link">About</Link>
-              <Link to="/contact" className = "nav-item nav-link"> Contact</Link>
             </div>
             <div className="col-md-6">
             <div className="row">
@@ -91,7 +89,6 @@ class App extends Component {
           }} />
           <Route path="/users/account" component={Account} />
           <Route path="/users/signup" component={Register} />
-          <Route path="/hotels/HotelEnter" component={HotelEnter} />
           </div>
           
 
