@@ -5,7 +5,6 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import Spinner from '../commons/Spinner'
 import HotelItem from './HotelItem'
 import HotelSearch from './HotelSearch'
-import SortByRating from './SortByRating'
 
 
 class HotelList extends React.Component {
@@ -84,9 +83,6 @@ class HotelList extends React.Component {
                                 <div className="row" >
                                 <div className="col-md-8">
                                 <HotelSearch handleSearch={this.handleSearch}  />
-                                </div>
-                                <div className="col-md-4">
-                                <SortByRating handleFilter={this.handleFilter} />
                                 </div>
                                 </div>
                                 <ul>

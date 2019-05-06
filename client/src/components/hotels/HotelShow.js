@@ -3,7 +3,6 @@ import axios from '../../config/axios'
 import {Link} from 'react-router-dom'
 
 import Spinner from '../commons/Spinner'
-import StarRating from '../commons/StarRating'
 
 class HotelShow extends React.Component {
     constructor(props) {
@@ -88,7 +87,7 @@ class HotelShow extends React.Component {
                     <div className="mt-5">
                     <div className="jumbotron jumbotron-fluid">
                         <div className="container">
-                            <h1 className="display-4">{this.state.hotel.name}</h1><StarRating rating={this.state.hotel.reviews[0].rating} />
+                            <h1 className="display-4">{this.state.hotel.name}</h1>
                             <p className="lead">{this.state.hotel.categories}   </p>
                           
                             <p>
@@ -162,11 +161,6 @@ class HotelShow extends React.Component {
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span className="sr-only">Next</span>
                             </a>
-                            </div>
-                            <div className="ml-4">
-                                <h1>Reviews</h1>
-                                <h3>{this.state.hotel.reviews[0].username}</h3>
-                                <p>{this.state.hotel.reviews[0].text}</p>
                             </div>
                                 
                            
