@@ -1,8 +1,6 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import axios from "../../config/axios";
-import ReactTooltip from "react-tooltip";
 
 class HotelItem extends React.Component {
   constructor(props) {
@@ -20,7 +18,7 @@ class HotelItem extends React.Component {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <div className="row row-no-gutters">
-          <div className="col-md-8 offset-md-2">
+          <div className="col-md-10 offset-md-2">
             <div className="row mt-2 border border-dark rounded">
               <div className="col-md-8 ">
                 <h5 className="card-title mt-1">
@@ -39,12 +37,12 @@ class HotelItem extends React.Component {
               </div>
               <div className="col-md-4">
                 <img
-                  src="https://via.placeholder.com/175x200"
+                  src="https://s-ec.bstatic.com/images/hotel/max1024x768/163/163623329.jpg"
                   style={{
                     float: "right",
                     margin: "0px -15px 0px 0px",
-                    height: "100%",
-                    width: "100%"
+                    height: "50%",
+                    width: "50%"
                   }}
                 />
               </div>

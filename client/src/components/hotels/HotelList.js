@@ -12,8 +12,6 @@ class HotelList extends React.Component {
         super(props)
         this.state = {
             hotels: [],
-            hotelsDesc:[],
-            filteredHotels:[],
             limit:10,
             isLoaded: false,
             isNewHotelsLoading : false 
@@ -25,8 +23,6 @@ class HotelList extends React.Component {
             .then(response => {
                 this.setState(() => ({
                     hotels: response.data,
-                    hotelsDesc: response.data.sort(function(a, b){return a.reviews[0].rating - b.reviews[0].rating}),
-                    filteredHotels:response.data.sort(function(a, b){return b.reviews[0].rating - a.reviews[0].rating}).slice(0,10),
                     isLoaded: true 
                 }))
             })
@@ -35,26 +31,6 @@ class HotelList extends React.Component {
 
     handleSearch = (search) => {
         const searchKey = search.toLowerCase()
-        this.setState((prevState) => ({
-            filteredHotels : prevState.hotels.filter(hotel => {
-                return (hotel.name.toLowerCase().includes(searchKey) || hotel.city.toLowerCase().includes(searchKey) || hotel.categories.toLowerCase().includes(searchKey))
-            })
-        }))
-    }
-
-    handleFilter = (value) => {
-        console.log('here')
-        if(value === 'highToLow')
-        {
-            this.setState((prevState) => ({
-                filteredHotels : prevState.hotels.slice(0,10)
-            }))
-        }else{
-            this.setState((prevState) => ({
-                filteredHotels : prevState.hotelsDesc.slice(0,10)
-            })) 
-        }
-        
     }
 
     fetchMoreData = () => {
@@ -65,7 +41,7 @@ class HotelList extends React.Component {
         setTimeout((prevState) => {
             this.setState((prevState) => ({ 
                 limit : prevState.limit + 10 ,
-                filteredHotels: prevState.hotels.slice(0,prevState.limit + 10)
+                hotels: prevState.hotels.slice(0,prevState.limit + 10)
             }))
         }, 1000)
       }
@@ -87,18 +63,14 @@ class HotelList extends React.Component {
                                 </div>
                                 <ul>
                                 <InfiniteScroll
-                                    dataLength={this.state.filteredHotels.length}
+                                    dataLength={this.state.hotels.length}
                                     next={this.fetchMoreData}
                                     hasMore={true}
-                                    loader={ this.state.filteredHotels.length === this.state.hotels.length ? 
-                                       <h2>That's all with us </h2>
-                                    :  <h4>Loading...<Spinner /></h4>}
                                 >
                                 { 
-                                    this.state.filteredHotels.map(hotel => {
+                                    this.state.hotels.map(hotel => {
                                         return (
-                                       <HotelItem key={hotel._id} id={hotel._id} name={hotel.name} address={hotel.address} city={hotel.city} reviews={hotel.reviews} 
-                                       categories={hotel.categories}/>
+                                       <HotelItem key={hotel._id} id={hotel._id} name={hotel.name} address={hotel.address} city={hotel.city} />
                                         )
                                     })
                                 }

@@ -144,13 +144,15 @@ class HotelShow extends React.Component {
                             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                <img className="d-block w-100" src="https://via.placeholder.com/50x50" alt="First slide" style={{ height:"500px", width:"100px"}} />
+                                <img className="d-block w-100" src="http://the-satori-saga.com/wp-content/uploads/2015/09/budget-friendly-hotels-india.jpg" alt="First slide" style={{ height:"100px", width:"100px"}} />
                                 </div>
+                                <br></br>
                                 <div className="carousel-item">
-                                <img className="d-block w-100" src="https://via.placeholder.com/50x51" alt="Second slide" style={{ height:"500px", width:"100px"}} />
+                                <img className="d-block w-100" src="http://the-satori-saga.com/wp-content/uploads/2015/09/budget-friendly-hotels-india.jpg" alt="Second slide" style={{ height:"100px", width:"100px"}} />
                                 </div>
+                                <br></br>
                                 <div className="carousel-item">
-                                <img className="d-block w-100" src="https://via.placeholder.com/50x52" alt="Third slide" style={{ height:"500px", width:"100px"}} />
+                                <img className="d-block w-100" src="http://the-satori-saga.com/wp-content/uploads/2015/09/budget-friendly-hotels-india.jpg" alt="Third slide" style={{ height:"100px", width:"100px"}} />
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

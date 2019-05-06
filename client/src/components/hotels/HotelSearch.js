@@ -17,10 +17,10 @@ class HotelSearch extends React.Component {
     render() {
         return (
             <div>
-                <form className="mt-2 ">
+                <form className="mt-4 ">
                 <div className="form-group has-feedback">
             		<label className="sr-only">Search</label>
-            		<input type="search" value={this.state.search} onChange={this.handleChange} className="form-control" name="search" id="search" placeholder="Search hotels by name,city and categories" />
+            		<input type="search" value={this.state.search} onChange={this.handleChange} className="form-control" name="search" id="search" placeholder="Search hotels by name,city" />
               		<span className="glyphicon glyphicon-search form-control-feedback"></span>
             	</div>
                 </form>
