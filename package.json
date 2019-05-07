@@ -4,8 +4,10 @@
     "description": "Asssignment for ZoloStay",
     "main": "index.js",
     "scripts": {
+        "heroku-postbuild": "cd client && npm install && npm run build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+
     "keywords": [],
     "author": "Saksham Gupta",
     "license": "ISC",
