@@ -145,13 +145,13 @@ class HotelShow extends React.Component {
                             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                <img className="d-block w-100" src="https://via.placeholder.com/50x50" alt="First slide" style={{ height:"500px", width:"100px"}} />
+                                <img className="d-block w-100" src="https://www.fariyas.com/hotel-in-mumbai/wp-content/uploads/sites/3/2018/05/IMG_3817-HDR.jpg-new.jpg" alt="First slide" style={{ height:"250px", width:"250px", padding:"20px"}} />
                                 </div>
                                 <div className="carousel-item">
-                                <img className="d-block w-100" src="https://via.placeholder.com/50x51" alt="Second slide" style={{ height:"500px", width:"100px"}} />
+                                <img className="d-block w-100" src="https://www.rwsentosa.com/-/media/project/non-gaming/rwsentosa/hotels/hotel-michael/hotelmichael-deluxeking.jpg" alt="Second slide" style={{ height:"250px", width:"250px", padding:"20px"}} />
                                 </div>
                                 <div className="carousel-item">
-                                <img className="d-block w-100" src="https://via.placeholder.com/50x52" alt="Third slide" style={{ height:"500px", width:"100px"}} />
+                                <img className="d-block w-100" src="https://www.fariyas.com/hotel-in-mumbai/wp-content/uploads/sites/3/2018/05/IMG_3817-HDR.jpg-new.jpg" alt="Third slide" style={{ height:"250px", width:"250px", padding:"20px"}} />
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

@@ -37,7 +37,7 @@ class HotelItem extends React.Component {
                                     <Link to={`/hotels/${this.props.id}`}><button className="btn btn-primary mb-1">More details</button></Link>
                                 </div>
                                 <div className="col-md-4">
-                                    <img src="https://via.placeholder.com/175x200"  style={{float: "right", margin: "0px -15px 0px 0px", height:"100%", width:"100%"}}/>
+                                    <img src="https://www.rwsentosa.com/-/media/project/non-gaming/rwsentosa/hotels/hotel-michael/hotelmichael-deluxeking.jpg"  style={{float: "right", margin: "0px -15px 0px 0px", height:"100%", width:"100%"}}/>
                                 </div>
                             </div>
                     </div>
