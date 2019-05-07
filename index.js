@@ -1,7 +1,6 @@
 const express = require('express')
 const { mongoose } = require('./config/database')
 const { routes } = require('./config/routes')
-const port = 3005
 const app = express()
 
 const path = require('path')
@@ -35,6 +34,6 @@ app.use('/', routes)
 
 // app.use(express.static('./public'))
 
-app.listen(port, function() {
-    console.log(`Listening to ${port}........`)
-})
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
