@@ -3,6 +3,7 @@ import axios from '../../config/axios'
 import {Link} from 'react-router-dom'
 
 import Spinner from '../commons/Spinner'
+import StarRating from '../commons/StarRating'
 
 class HotelShow extends React.Component {
     constructor(props) {
@@ -87,7 +88,7 @@ class HotelShow extends React.Component {
                     <div className="mt-5">
                     <div className="jumbotron jumbotron-fluid">
                         <div className="container">
-                            <h1 className="display-4">{this.state.hotel.name}</h1>
+                            <h1 className="display-4">{this.state.hotel.name}</h1><StarRating rating={this.state.hotel.reviews[0].rating} />
                             <p className="lead">{this.state.hotel.categories}   </p>
                           
                             <p>
@@ -144,15 +145,13 @@ class HotelShow extends React.Component {
                             <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                <img className="d-block w-100" src="http://the-satori-saga.com/wp-content/uploads/2015/09/budget-friendly-hotels-india.jpg" alt="First slide" style={{ height:"100px", width:"100px"}} />
+                                <img className="d-block w-100" src="https://via.placeholder.com/50x50" alt="First slide" style={{ height:"500px", width:"100px"}} />
                                 </div>
-                                <br></br>
                                 <div className="carousel-item">
-                                <img className="d-block w-100" src="http://the-satori-saga.com/wp-content/uploads/2015/09/budget-friendly-hotels-india.jpg" alt="Second slide" style={{ height:"100px", width:"100px"}} />
+                                <img className="d-block w-100" src="https://via.placeholder.com/50x51" alt="Second slide" style={{ height:"500px", width:"100px"}} />
                                 </div>
-                                <br></br>
                                 <div className="carousel-item">
-                                <img className="d-block w-100" src="http://the-satori-saga.com/wp-content/uploads/2015/09/budget-friendly-hotels-india.jpg" alt="Third slide" style={{ height:"100px", width:"100px"}} />
+                                <img className="d-block w-100" src="https://via.placeholder.com/50x52" alt="Third slide" style={{ height:"500px", width:"100px"}} />
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -163,6 +162,11 @@ class HotelShow extends React.Component {
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span className="sr-only">Next</span>
                             </a>
+                            </div>
+                            <div className="ml-4">
+                                <h1>Reviews</h1>
+                                <h3>{this.state.hotel.reviews[0].username}</h3>
+                                <p>{this.state.hotel.reviews[0].text}</p>
                             </div>
                                 
                            

@@ -5,7 +5,6 @@ import '../src/css/navbar.css'
 
 import HotelList from './components/hotels/HotelList'
 import HotelShow from './components/hotels/HotelShow'
-import HotelEnter from './components/hotels/HotelEnter'
 
 import Login from './components/users/Login'
 import Register from './components/users/Register'
@@ -41,11 +40,13 @@ class App extends Component {
           <div className="row">
             <div className="col-md-3">
               <Link to="/" className = "nav-item nav-link">Home</Link>
+              <Link to="/about" className = "nav-item nav-link">About</Link>
+              <Link to="/contact" className = "nav-item nav-link"> Contact</Link>
             </div>
             <div className="col-md-6">
             <div className="row">
-            <div className="col-md-12 offset-md-4 mt-2">
-            <h3 style={{"color":"Black"}}>ZoloStay Booking WebApp</h3>
+            <div className="col-md-6 offset-md-3 mt-2">
+            <h3 style={{"color":"orange"}}>Hotel booking app</h3>
             </div>
             </div>
             </div>
